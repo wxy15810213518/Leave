@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <at.markushi.ui.ActionView
+            android:id="@+id/action"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:padding="16dip"
+            app:av_color="@android:color/white"
+            app:av_action="plus"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_gravity="top"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="16dip"
+            android:paddingLeft="36dip"
+            android:text="QJ 助手"
+            android:textColor="#DDFFFFFF"
+            android:textSize="36sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"
+        android:layout_below="@+id/top"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

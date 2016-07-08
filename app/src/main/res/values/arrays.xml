@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="reason">
+        <item>事假</item>
+        <item>病假</item>
+        <item>其他</item>
+    </array>
+</resources>

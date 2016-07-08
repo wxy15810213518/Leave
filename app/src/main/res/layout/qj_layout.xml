@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <at.markushi.ui.ActionView
+            android:id="@+id/action"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:padding="16dip"
+            app:av_color="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:av_action="close"/>
+        <at.markushi.ui.ActionView
+            android:id="@+id/action_plus"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:padding="16dip"
+            android:layout_marginRight="35dip"
+            app:av_color="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:av_action="plus"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="56dip"
+            android:background="@null"
+            android:text="确定"
+            android:id="@+id/btn_ok"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="100dip"
+            android:background="@null"
+            android:text="全选"
+            android:id="@+id/btn_select"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_gravity="top"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="16dip"
+            android:paddingLeft="36dip"
+            android:text="QJ 助手"
+            android:textColor="#DDFFFFFF"
+            android:textSize="32sp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
